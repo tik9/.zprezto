@@ -1,8 +1,8 @@
 
+#I have a full setup of zprezto on Github including my own changes in my repo. Can I clone my repo instead of the oficial one?
+
 # General
 
-# Set case-sensitivity for completion, history lookup, etc.
-# zstyle ':prezto:*:*' case-sensitive 'yes'
 
 # Color output (auto set to 'no' on dumb terminals).
 zstyle ':prezto:*:*' color 'yes'
@@ -15,13 +15,13 @@ zstyle ':prezto:module:completion:options' correct 'no'
 zstyle ':prezto:load' pmodule \
   'directory' \
   'utility' \
+  'my-utility' \
   'git' \
   'my-git' \
   'homebrew' \
   'completion' \
   'prompt' \
   'autosuggestions' \
-  'common' \
   'mac'
 
 #
@@ -128,7 +128,7 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 # Set the prompt theme to load.
 # Setting it to 'random' loads a random theme.
 # Auto set to 'off' on dumb terminals.
-zstyle ':prezto:module:prompt' theme 'sorin'
+zstyle ':prezto:module:prompt' theme 'random'
 
 # Set the working directory prompt display length.
 # By default, it is set to 'short'. Set it to 'long' (without '~' expansion)

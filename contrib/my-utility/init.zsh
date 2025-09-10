@@ -1,6 +1,6 @@
 
 # alias
-alias a='alias | grep'
+alias a='alias | grep -i'
 alias de='declare -f'
 alias t=type
 
@@ -8,12 +8,11 @@ alias t=type
 alias dc="cd $HOME/documents"
 alias dk="cd $HOME/desktop"
 alias dw="cd $HOME/downloads"
-alias u="cd $ZSH_CUSTOM"
 alias y="cd $HOME/cpython"
 alias z="cd $HOME/.zprezto"
 
 # progr
-alias b='bc<<<'
+alias b='bc -l<<<'
 alias c=cat
 alias co=code
 alias n=nano
@@ -24,7 +23,7 @@ alias rf='rm -rf'
 alias rp='rm *.pdf'
 alias rz='rm *.zip'
 alias rm_rec='find . -type f -cmin -1 -delete'
-
+unalias rm
 
 # ssh
 alias sd=sshd
@@ -33,7 +32,7 @@ alias pd='ps -ef|grep ssh'
 
 alias du='date +%H:%M'
 alias dt='date +%d'
-alias e='exec zsh'
+alias ex='exec zsh'
 alias ec='echo'
 alias h='history'
 alias i=ifconfig
@@ -49,13 +48,20 @@ alias su=sudo
 alias to=touch
 alias x=exit
 
-f() {
+fib() {
 if (( $1 <= 1 )); then
         echo 1
     else
         last=$(f $(( $1 - 1 )))
         echo $(( $1 * last ))
     fi
+}
+
+ln_loop(){
+    for i in $HOME/.zprezto/runcoms/^README.md;do
+        echo $i ${i:t}
+        # ln -s $i $HOME/.zprezto/.${i:t}
+    done
 }
 
 ifco() { echo $(ip a) | sed -E 's/inet ([0-9]{3}\.[0-9]{3}\.[0-9]{3}\.[0-9]+).*/\1/' | grep inet }

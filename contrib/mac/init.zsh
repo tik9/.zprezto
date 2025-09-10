@@ -14,6 +14,10 @@ alias on-w="networksetup -setairportpower WI-FI on"
 alias wi="ipconfig getifaddr $wintf"
 alias wl='/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Resources/airport scan'
 
+# osa, 1=10%
+alias o_reduce='osascript -e "set volume 0.3"'
+alias o_increase='osascript -e "set volume 1.0"'
+
 # pbcopy
 alias an='echo Hallo, ich würde es für 50 € nehmen, bitte nur melden falls der Preis in Frage kommt.|pbcopy'
 alias adr='echo Timo Körner, Bergstr. 15, 85120 Hepberg | pbcopy'
@@ -24,7 +28,7 @@ alias fn='ec 08456 9524 297|pbcopy'
 alias ib='ec de39 5001 0517 5447 5823 49 | pbcopy'
 alias nr='ec 0157 3959 8220 | pbcopy'
 alias nh='ec Hallo, ich bin der neue Mathe Nachhilfelehrer. Kannst du bitte für den gemeinsamen Termin  Unterlagen für die Vorbereitung mailen. | pbcopy'
-alias nh2='ec Hallo, ich biete Online Nachhilfe per google meet. Der Preis ist 18 € für 45 Minuten. Das Material als Pdf oder Bild bitte über Whatsapp schicken mit einem Terminvorschlag für die erste Stunde an 0157 3959 8220 | pbcopy'
+alias nh2='ec Hallo, ich biete Online Nachhilfe per google meet. Der Preis ist 18 € für 45 Minuten. Das Material als Pdf oder Bild bitte über Whatsapp schicken mit einem Terminvorschlag für die erste Stunde an 0157 3959 8220 oder per mail an user153015@gmail.com | pbcopy'
 
 alias st='ec Die Adresse ist Alte Landstraße 8, 85101 Lenting. Es gibt oberhalb bzw. nördlich eine Baustelle, die Zufahrt zum Haus ist an der Gaststätte Hofmark vorbei, also von Süden|pbcopy'
 
